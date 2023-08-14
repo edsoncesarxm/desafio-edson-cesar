@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Técnico Start DB</title>
+    <link rel="stylesheet" href="/caixa-da-lanchonete/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Caixa da Lanchonete</h1>
+    </header>
+    <main class="container-principal">
+        <section class="container-cardapio">
+            <h2 class="titulo-cardapio">Cardápio</h2>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>código</th>
+                        <th>decrição</th>
+                        <th>valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cafe</td>
+                        <td>Café</td>
+                        <td>R$ 3,00</td>
+                    </tr>
+                    <tr>
+                        <td>chantily</td>
+                        <td>Chantily (extra do café)</td>
+                        <td>R$ 1,50</td>
+                    </tr>
+                    <tr>
+                        <td>suco</td>
+                        <td>Suco Natural</td>
+                        <td>R$ 6,20</td>
+                    </tr>
+                    <tr>
+                        <td>sanduiche</td>
+                        <td>Sanduíche</td>
+                        <td>R$ 6,50</td>
+                    </tr>
+                    <tr>
+                        <td>queijo</td>
+                        <td>Queijo (extra do Sanduíche)</td>
+                        <td>R$ 2,00</td>
+                    </tr>
+                    <tr>
+                        <td>salgado</td>
+                        <td>Salgado</td>
+                        <td>R$ 1,75</td>
+                    </tr>
+                    <tr>
+                        <td>combo1</td>
+                        <td>1 Suco e 1 Sanduíche</td>
+                        <td>R$ 9,50</td>
+                    </tr>
+                    <tr>
+                        <td>combo2</td>
+                        <td>1 Café e 1 Sanduíche</td>
+                        <td>R$ 7,50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container-inputs">
+            <div class="area-do-pedido">
+                <p class="input-pedido">
+                    Informe o código do item:
+                    <input type="text" id="inputCodigoDoItem">
+                    <button id="btAdicionarItem">Adicionar</button>
+                </p>
+            </div>
+            <div class="output-itens">
+                <pre id="outputCodigoInformado"></pre>
+            </div>
+
+            <div>
+                <button id="salvarPedido">Salvar Pedido</button>
+                <button id="excluirItens">Excluir Itens</button>
+            </div>
+
+            <div class="area-de-pagamento">
+                <p class="input-pagamento">
+                    Informe a forma de pagamento:
+                    <input type="text" id="inputPagamento">
+                    <button id="btConfirmarPagamento">Confirmar</button>
+                </p>
+                <p class="texto-formatado">Escolha entre debito, credito ou dinheiro.</p>
+            </div>
+            <div class="output-valor-pagamento">
+                <p id="outputDescricaoFormaDePagamento"></p>
+                <p id="outputValorTotal"></p>
+            </div>
+            <button id="btFinalizarPagamento">Finalizar Pagamento</button>
+        </section>
+    </main>
+    <footer>
+        <p>feito por <a href="https://github.com/edsoncesarxm">Edson Cesar</a></p>
+    </footer>
+
+    <script src="/caixa-da-lanchonete/caixa-da-lanchonete.js"></script>
+</body>
+</html>
